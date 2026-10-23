@@ -14,19 +14,20 @@
             padding: 16 px;
         }
 
-main {
-    
-    background-color: black;
-            color: rgba(194, 171, 88, 0.578);
+        main{
+            background-color: black;
+            color:  rgb(39, 62, 89);
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
             padding: 16 px;
-}
-
+    }
+    article{
+        display:flex;
+    }
     img{|
-    width: 80px;
-    height: 80px;
+        width: 80px;
+        height: 80px;
     }
     </style>
 </head>
@@ -36,22 +37,36 @@ main {
         <p>Venha conhecer desenhos poucos conhecidos incriveis</p>
     </header>
 
-<main>
-    <img src="imagem-blog.png"alt="`alt=Mosaico com cartazes de filmes e séries de animação da Netflix, com a palavra 'NETFLIX' escrita em grandes letras vermelhas no centro. Entre as animações ao fundo estão Os Willoughbys, Caçadores de Trolls, A Família Mitchell e a Revolta das Máquinas e a animação de lendas chinesas.">
-    <h2>Porque netflix??</h2>
-    <p>sejam bem vindos ao incrivel mundo das animações pouco conhecidas</p>
-    <p>por: mariane h. nakai</p>
-    <button>✨​🎀​🤏​<span>0</span></button>
-</main>
+    <main>
+        <article>
+        <img src="imagem-blog.png"alt="`alt=Mosaico com cartazes de filmes e séries de animação da Netflix, com a palavra 'NETFLIX' escrita em grandes letras vermelhas no centro. Entre as animações ao fundo estão Os Willoughbys, Caçadores de Trolls, A Família Mitchell e a Revolta das Máquinas e a animação de lendas chinesas.">
+        <h2>Porque netflix??</h2>
+        <p>sejam bem vindos ao incrivel mundo das animações pouco conhecidas</p>
+        <p>por: mariane h. nakai</p>
+        <button>👍✨<span>0</span></button>
+        <button>🤔✨<span>0</span></button>
+        </article>
+
+        <article>
+        <img src="planos_streaming_png_61c7fba22f.webp"alt="`alt=Mosaico com cartazes de filmes e séries de animação da Netflix, com a palavra 'NETFLIX' escrita em grandes letras vermelhas no centro. Entre as animações ao fundo estão Os Willoughbys, Caçadores de Trolls, A Família Mitchell e a Revolta das Máquinas e a animação de lendas chinesas.">
+        <h2>Boa sorte netflix!</h2>
+        <p>conheça outros sites e app de streaming grátis!</p>
+        <p>por: mariane h. nakai</p>
+        <button>👍✨<span>0</span></button>
+        <button>🤔✨<span>0</span></button>
+        </article>
+    </main>
+
 </body>
 <script>
-const botao = document.querySelector("button");
+const botao = document.querySelectorAll("main button");
+botoes.forEach(function(botao){
 botao.addEventListener("click", botaoClicado);
 function botaoClicado() {
 console.log("fui clicado");
 let texto = botao.querySelector("span");
 texto.textContent++;
-}
+}});
 
 </script>
 </html>
